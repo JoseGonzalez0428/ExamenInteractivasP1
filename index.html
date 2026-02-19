@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-black text-white" >
+    <nav class="bg-transparent p-4 fixed top-0 left-0 right-0 z-40 transition-all">
+        <div class="container mx-auto px-2 flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="rounded-md bg-[#258CF4] w-8 h-8 flex items-center justify-center font-bold" style="font-family: Inter, sans-serif">J</div>
+                <a href="" class="text-2xl font-bold text-[#F1F5F9] pl-2">JOSE.DEV</a>
+                <a href="" class="text-2xl font-bold pl-2 text-[#258CF4]">/ 2026</a>
+            </div>
+            <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-800 bg-[#0D141CB3]">
+                <span class="relative flex items-center h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+                </span>
+                <span class="text-emerald-400 text-sm font-mono tracking-widest hidden sm:inline">DISPONIBLE PARA TRABAJAR</span>
+                <span class="text-emerald-400 text-sm font-mono tracking-widest sm:hidden">DISPONIBLE</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto py-8 pt-20">
+        <div class="w-full grid grid-cols-1 lg:grid-cols-9 gap-4">
+            <div class="bg-[#0A1017] border border-gray-800 p-6 rounded-xl lg:col-span-6 transition-all hover:border-blue-800 relative lg:pr-[40%]">
+                <span class="text-[#258CF4] text-base block mb-4 font-mono tracking-widest mt-2">DESARROLLADOR JR</span>
+                <h1 class="text-6xl font-bold text-[#F1F5F9]">José Carlos</h1>
+                <h1 class="text-6xl font-bold block mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">González Flores</h1>
+                <p class="text-[#94A3B8] text-xl mb-10" style="font-family: Inter, sans-serif">Desarrollador web fullstack con experiencia en tecnologías modernas como Laravel, Next.js y Python, enfocado en crear soluciones eficientes, escalables y de alto impacto.</p>
+                <div class="flex flex-wrap gap-3">
+                    <button class="text-base px-8 py-4 rounded bg-[#258CF4]  mr-4 rounded-lg font-bold transition-all hover:bg-[#227FDE] hover:cursor-pointer" style="font-family: Inter, sans-serif" onclick="abrirModal()">Contactar <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="text-base px-8 py-4 rounded border border-gray-600 rounded-lg font-bold transition-all hover:bg-[#191F27] hover:cursor-pointer" style="font-family: Inter, sans-serif">Ver Proyectos</button>
+                </div>
+            </div>
+            <div class="bg-[#0A1017] border border-gray-800 p-6 rounded-xl lg:col-span-3 transition-all hover:border-blue-800">
+                <div class="mb-6 lg:mb-[32%]">
+                    <h3 class="text-[#64748B] text-base font-mono tracking-widest mt-2">ESTADISTICAS</h3>
+                </div>
+                <div class="grid grid-cols-3 lg:grid-cols-1 gap-4">
+
+                
+                    <div class="flex justify-between center items-center">
+                        <div class="flex flex-col">
+                            <span class="text-2xl lg:text-4xl font-black text-[#00F2FF] font-mono">20</span>
+                            <span class="text-[#94A3B8] text-xs sm:text-sm" style="font-family: Inter, sans-serif">PROYECTOS FINALIZADOS</span>
+                        </div>
+                        <i class="fa-solid fa-file text-[#00F2FF] text-xl hidden lg:block"></i>
+                    </div>
+                    
+                    <div class="flex justify-between mt-4 center items-center">
+                        <div class="flex flex-col">
+                            <span class="text-2xl lg:text-4xl font-black text-[#258CF4] font-mono">2+</span>
+                            <span class="text-[#94A3B8] text-xs sm:text-sm" style="font-family: Inter, sans-serif">AÑOS DE EXPERIENCIA</span>
+                        </div>
+                        <i class="fa-solid fa-calendar text-[#258CF4] text-xl hidden lg:block "></i>
+                    </div>
+                    
+                    <div class="flex justify-between mt-4 center items-center">
+                        <div class="flex flex-col">
+                            <span class="text-2xl lg:text-4xl font-black text-[#6366F1] font-mono">5</span>
+                            <span class="text-[#94A3B8] text-xs sm:text-sm" style="font-family: Inter, sans-serif">LENGUAJES DE PROGRAMACIÓN</span>
+                        </div>
+                        <i class="fa-solid fa-code text-[#6366F1] text-xl hidden lg:block "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-9 gap-4 mt-4">
+            <div class="group relative bg-[#0A1017] border border-gray-800 rounded-xl overflow-hidden transition-all hover:border-blue-800 lg:col-span-6">
+                <div class="relative h-52 sm:h-65 w-full overflow-hidden">
+                    <img src="https://user-images.githubusercontent.com/97978224/214325024-ecd69c9c-6ece-4245-b2ed-735b4fad26d0.png" alt="Preview" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1017] via-[#0A1017]/10 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 flex gap-2">
+                        <span class="ml-2 px-3 py-1 text-ms font-medium text-blue-400 bg-blue-500/10 border border-blue-500/20 rounded-md font-mono">
+                            Laravel
+                        </span>
+                        <span class="px-3 py-1 text-ms font-medium text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded-md font-mono">
+                            Tailwind CSS
+                        </span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-start justify-between">
+                        <h2 class="text-xl sm:text-3xl font-bold text-[#F1F5F9] mb-2"  style="font-family: Inter, sans-serif">
+                            Sistema de gestión escolar
+                        </h2>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors text-2xl">
+                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <p class="text-[#94A3B8] text-base leading-relaxed"  style="font-family: Inter, sans-serif">
+                        Aplicación web para gestionar estudiantes, materias y calificaciones.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-[#0A1017] border border-gray-800 p-6 rounded-xl transition-all hover:border-blue-800 lg:col-span-3">
+                <h3 class="text-[#64748B] text-base font-mono tracking-widest">LENGUAJES</h3>
+                <div class="grid  grid-cols-6 lg:grid-cols-3 gap-4 px-4 mt-6 mb-2">
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-12 h-12 flex items-center justify-center bg-[#0D1117] border border-gray-800 rounded-2xl transition-all  hover:bg-[#0E2031] group">
+                            <i class="fa-brands fa-php py-2"></i>
+                        </div>
+                        <span class="text-[#64748B] text-sm font-mono">PHP</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-12 h-12 flex items-center justify-center bg-[#0D1117] border border-gray-800 rounded-2xl transition-all  hover:bg-[#0E2031] group">
+                            <i class="fa-brands fa-python py-2"></i>
+                        </div>
+                        <span class="text-[#64748B] text-sm font-mono">PYTHON</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-12 h-12 flex items-center justify-center bg-[#0D1117] border border-gray-800 rounded-2xl transition-all  hover:bg-[#0E2031] group">
+                            <i class="fa-brands fa-js py-2"></i>
+                        </div>
+                        <span class="text-[#64748B] text-sm font-mono">CSS</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-12 h-12 flex items-center justify-center bg-[#0D1117] border border-gray-800 rounded-2xl transition-all  hover:bg-[#0E2031] group">
+                            <i class="fa-brands fa-java py-2"></i>
+                        </div>
+                        <span class="text-[#64748B] text-sm font-mono">JAVA</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-12 h-12 flex items-center justify-center bg-[#0D1117] border border-gray-800 rounded-2xl transition-all  hover:bg-[#0E2031] group">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <span class="text-[#64748B] text-sm font-mono">HTML</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-12 h-12 flex items-center justify-center bg-[#0D1117] border border-gray-800 rounded-2xl transition-all  hover:bg-[#0E2031] group">
+                            <i class="fa-brands fa-git"></i>
+                        </div>
+                        <span class="text-[#64748B] text-sm font-mono">GIT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <div class="bg-[#0A1017] border border-gray-800 p-6 rounded-xl transition-all hover:border-blue-800  pb-26">
+                <div class="flex center items-center gap-4 mb-4">
+                    <div class="w-12 h-12 flex items-center justify-center bg-[#00F2FF33] border border-gray-800 rounded-2xl transition-all  hover:bg-[#0E2031] group">
+                        <i class="fa-solid fa-flask py-2 text-[#00F2FF]"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-[#F1F5F9] text-base font-semibold"  style="font-family: Inter, sans-serif">Laboratorio</h2>
+                        <span class="text-[#64748B] font-mono text-xs">PROYECTOS REALIZADOS: 8</span>
+                    </div>
+                </div>
+                <p class="text-[#94A3B8]"  style="font-family: Inter, sans-serif">En este espacio se muestran los proyectos realizados en el laboratorio.</p>
+            </div>
+            <div class="bg-[#0A1017] border border-gray-800 p-6 rounded-xl transition-all hover:border-blue-800  pb-26">
+                <div class="flex center items-center gap-4 mb-4">
+                    <div class="w-12 h-12 flex items-center justify-center bg-[#6366F133] border border-gray-800 rounded-2xl transition-all  hover:bg-[#0E2031] group">
+                        <i class="fa-solid fa-folder py-2 text-[#6366F1]"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-[#F1F5F9] text-base font-semibold"  style="font-family: Inter, sans-serif">Gestion de proyectos</h2>
+                        <span class="text-[#64748B] font-mono text-xs">PROYECTOS REALIZADOS: 12</span>
+                    </div>
+                </div>
+                <p class="text-[#94A3B8]"  style="font-family: Inter, sans-serif">He gestionado proyectos de desarrollo web desde cero, incluyendo el diseño de interfaces, implementación de funcionalidades y despliegue en entornos de producción.</p>
+            </div>
+            <div class="bg-[#0A1017] border border-gray-800 p-6 rounded-xl transition-all hover:border-blue-800 sm:col-span-2 lg:col-span-1 pb-26">
+                <div class="flex center items-center gap-4 mb-4">
+                    <div class="w-12 h-12 flex items-center justify-center bg-[#2563EB33] border border-gray-800 rounded-2xl transition-all  hover:bg-[#0E2031] group">
+                        <i class="fa-solid fa-people-carry-box py-2 text-[#2563EB]"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-[#F1F5F9] text-base font-semibold"  style="font-family: Inter, sans-serif">Colaboración en equipo</h2>
+                    </div>
+                </div>
+                <p class="text-[#94A3B8]"  style="font-family: Inter, sans-serif">He trabajado en equipos multidisciplinarios para desarrollar soluciones innovadoras y eficientes, comunicándome efectivamente con miembros del equipo y manteniendo altos estándares de calidad en el desarrollo de software.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="modalId" class="hidden fixed inset-0 z-50 flex items-center justify-center" role="dialog" aria-modal="true" aria-hidden="true">
+    <!-- Backdrop -->
+    <div class="absolute inset-0 bg-black/70" id="modalBackdrop"></div>
+
+    <!-- Modal Panel -->
+    <div class="relative bg-[#0A1017] border border-gray-800 rounded-xl shadow-xl w-full max-w-sm mx-4 z-10">
+        
+        <!-- Header -->
+        <div class="flex items-center justify-between px-6 py-4 border-b border-gray-800">
+            <h5 class="text-base font-semibold text-[#F1F5F9]">Ingresa tus datos</h5>
+            <button type="button" onclick="cerrarModal()" class="text-gray-600 hover:text-gray-400 transition-colors rounded-full p-1 hover:bg-gray-800" aria-label="Close">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Body -->
+        <div class="px-6 py-5 space-y-4">
+            <input type="hidden" id="id" />
+
+            <div class="flex flex-col gap-1">
+                <label for="nombre" class="text-sm font-medium text-[#94A3B8]">Nombre</label>
+                <input type="text" id="nombre" class="rounded-lg border border-gray-800 bg-[#0D1117] text-[#F1F5F9] px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#258CF4] focus:border-transparent transition placeholder-gray-700"/>
+            </div>
+
+            <div class="flex flex-col gap-1">
+                <label for="correo" class="text-sm font-medium text-[#94A3B8]">Correo</label>
+                <input type="email" id="correo" class="rounded-lg border border-gray-800 bg-[#0D1117] text-[#F1F5F9] px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#258CF4] focus:border-transparent transition placeholder-gray-700"/>
+            </div>
+
+            <div class="flex flex-col gap-1">
+                <label for="asunto" class="text-sm font-medium text-[#94A3B8]">Asunto</label>
+                <input type="text" id="asunto" class="rounded-lg border border-gray-800 bg-[#0D1117] text-[#F1F5F9] px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#258CF4] focus:border-transparent transition placeholder-gray-700"/>
+            </div>
+        </div>
+
+        <div id="mensaje" class="hidden text-sm rounded-xl px-4 py-3"></div>
+
+        <!-- Footer -->
+        <div class="flex justify-end gap-3 px-6 py-4 border-t border-gray-800">
+        <button type="button" onclick="cerrarModal()" class="px-4 py-2 text-sm font-medium text-[#94A3B8] border border-gray-700 hover:bg-[#191F27] rounded-lg transition-colors hover:cursor-pointer">
+            Cancelar
+        </button>
+        <button type="button" onclick="enviarCorreo()" class="px-4 py-2 text-sm font-bold text-white bg-[#258CF4] hover:bg-[#227FDE] rounded-lg transition-colors hover:cursor-pointer">
+            <span id="textobtn">Enviar mensaje</span>
+        </button>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function abrirModal() {
+            const modal = document.getElementById("modalId");
+            modal.classList.remove("hidden");
+            modal.setAttribute("aria-hidden", "false");
+        }
+
+        function cerrarModal() {
+            const modal = document.getElementById("modalId");
+            modal.classList.add("hidden");
+            modal.setAttribute("aria-hidden", "true");
+            document.getElementById('nombre').value = '';
+            document.getElementById('correo').value = '';
+            document.getElementById('asunto').value = '';
+            document.getElementById('mensaje').classList.add('hidden');
+            document.getElementById('textobtn').textContent = 'Enviar mensaje';
+            document.getElementById('mensaje').className = 'hidden';
+        }
+
+        function enviarCorreo() {
+        const nombre = document.getElementById('nombre').value.trim();
+        const correo = document.getElementById('correo').value.trim();
+        const asunto = document.getElementById('asunto').value.trim();
+        const msg = document.getElementById('mensaje');
+        
+        if (!nombre || !correo || !asunto) {
+            msg.textContent = "Por favor, completa todos los campos.";
+            msg.className = 'mx-6 mb-4 text-sm font-mono rounded-lg px-4 py-3 bg-yellow-500/10 text-yellow-400 border border-yellow-500/20';
+            msg.classList.remove('hidden');
+            return;
+        }
+
+        document.getElementById('textobtn').textContent = 'Enviando...';
+
+        $.ajax({
+            url: 'https://corsproxy.io/?url=https://diane-domesticable-eliz.ngrok-free.dev/enviar',
+            method: 'POST',
+            contentType: "application/json",
+            data: JSON.stringify({ nombre,correo,asunto}),
+            success: function (res) {
+                msg.textContent = '¡Mensaje enviado con éxito!';
+                msg.className = 'mx-6 mb-4 text-sm font-mono rounded-lg px-4 py-3 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20';
+                document.getElementById('textobtn').textContent = 'Enviado';
+            },
+            error: function (xhr) {
+                msg.textContent = 'Ocurrió un error al enviar. Intenta de nuevo.';
+                msg.className = 'mx-6 mb-4 text-sm font-mono rounded-lg px-4 py-3 bg-red-500/10 text-red-400 border border-red-500/20';
+                document.getElementById('textobtn').textContent = 'Enviar mensaje';
+            }
+        });
+        }
+    </script>
+    
+  </body>
+</html>
